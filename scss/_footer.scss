@@ -1,0 +1,20 @@
+.footer {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.footer__wrapper {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-line::after {
+	@include footer-line;
+	background-image: linear-gradient(to right, #93949e 15%, #a4a6ad 35%, #E3E3E7 85%);
+}
+
+.footer-line-orange::after {
+	@include footer-line;
+	background-image: linear-gradient(to right, #f59b00a4 15%, #FFAD22 35%, #facf86 85%);
+}

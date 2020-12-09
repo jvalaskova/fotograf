@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }}</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&family=Alegreya:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    
+    
+</head>
+
+<body class="{{ bodyclass }}">
+
+
+	
+		<header class="header">
+			<div class="header__logo-wrapper--top">
+				<div class="header__logo-wrapper">  
+					<img class="header__logo" src="/images/logo.png" alt="logo Petr Dopita Photography">
+				</div>
+			</div>
+		
+			<div class="header-line header-line-top"></div>
+
+			<div class="header__menu-wrapper--bottom">  
+				<div class="header__menu-wrapper">
+					<ul class="header__menu">
+						<li class="header__menu-item{% if header === 'index' %} header__menu-item--active{% endif %}"><a href="/">Úvod</a></li>  
+						<li class="header__menu-item{% if header === 'omne' %} header__menu-item--active{% endif %}"><a href="/omne/">O mně</a></li>
+						<li class="header__menu-item{% if header === 'galerie' %} header__menu-item--active{% endif %}"><a href="/galerie/">Galerie</a></li>
+						<li class="header__menu-item{% if header === 'cenik' %} header__menu-item--active{% endif %}"><a href="/cenik/">Ceník</a></li>
+						<li class="header__menu-item{% if header === 'blog' %} header__menu-item--active{% endif %}"><a href="/blog/">Blog</a></li>
+						<li class="header__menu-item{% if header === 'kontakt' %} header__menu-item--active{% endif %}"><a href="/kontakt/">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header-line header-line-buttom"></div>
+
+		</header>

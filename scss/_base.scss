@@ -1,0 +1,27 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {        /*orange: #F59B00, #FFAD22, #FFC35C, šedá: 42444D, šedá gradinet: A7A9B4, BDBFC7, E3E3E7, */
+	margin: 0;
+	font-family: $font-base;
+	font-size: 113%;
+	color: $color-text;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.contain-wrapper {
+	@include contain-wrapper;
+}
+
+.paragraph {
+    margin-top: $paragraph-margin;
+    margin-bottom: $paragraph-margin;
+}
+
+
+.block {
+    margin-top: $block-margin;
+    margin-bottom: $block-margin;
+}

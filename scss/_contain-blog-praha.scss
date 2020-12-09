@@ -1,0 +1,85 @@
+.body-wrapper-praha {
+    background-image: $body-color-gradient;
+}
+
+
+.contain-blog__nocni-foceni-v-praze-wrapper {
+	@include contain-wrapper;
+	padding-top: 15px;    
+}
+
+.contain-blog__nocni-foceni-v-praze--photo-wrapper {
+	border-radius: 3px;
+    box-shadow: 1px 1px 3px;
+}
+
+.contain-blog__nocni-foceni-v-praze--photo {
+    width: 100%;
+    display: block;
+}
+
+.contain-blog__nocni-foceni-v-praze--dateandplace {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.contain-blog__nocni-foceni-v-praze--text {
+    margin-top: $paragraph-margin;
+    margin-bottom: $block-margin;
+}
+
+.contain-blog__nocni-foceni-v-praze--text p {
+    margin-top: $paragraph-margin;
+    margin-bottom: $paragraph-margin;
+}
+
+
+
+
+@media screen and (min-width: 1028px) {
+
+    .contain-blog__nocni-foceni-v-praze-wrapper {
+        max-width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr) 0.5fr 0.5fr;
+        grid-template-rows: 15px 1fr 1fr 1fr 1fr 1fr 1fr 15px;
+    }
+
+    .contain-blog__nocni-foceni-v-praze--text{
+        grid-column: 3 / 8;
+        grid-row: 4 / 8;
+        padding: 30px 15px 10px 15px;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+    .contain-blog__nocni-foceni-v-praze--photo-wrapper {
+        grid-column: 2 / 6;
+        grid-row: 2 / 5;
+        border: 1px solid whitesmoke;
+    }
+
+    .contain-blog__nocni-foceni-v-praze--photo {
+        max-width: 100%;
+        display: block;
+    }
+
+    .contain-blog__cechy-pod-kosirem--dateandplace {
+        grid-column: 6 / 9;
+        grid-row: 3 / 5;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px;
+        background-color: #FFC35C;
+
+    }
+
+}

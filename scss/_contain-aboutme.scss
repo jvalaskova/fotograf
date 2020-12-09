@@ -1,0 +1,87 @@
+.body-wrapper-aboutme {
+    background: #2E2a28 url(../images/omne-pozadi.jpg) no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
+    color: whitesmoke;
+
+}
+
+.contain-aboutme-wrapper {
+    @include contain-wrapper;
+    padding-top: 15px;
+
+}
+
+.contain-aboutme__text-wrapper {
+    background-color: #797C7C70;
+    padding: 15px 10px;
+}
+
+@media screen and (min-width: 640px) {
+
+    .contain-aboutme__text-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .contain-aboutme__text-wrapper--first {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+    
+    .contain-aboutme__text-wrapper--second {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+
+    .contain-aboutme__text-wrapper--third {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+    .contain-aboutme__text-wrapper--fourth {
+        grid-column: 2 / span 3;
+        grid-row: 4;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1028px) {
+
+
+    
+    .contain-aboutme__text-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+        grid-template-rows: 15px auto;
+    }
+
+    .contain-aboutme__text-wrapper--first {
+        grid-column: 2 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .contain-aboutme__text-wrapper--second {
+        grid-column: 6 / 9;
+        grid-row: 2 / 3;
+    }
+
+    .contain-aboutme__text-wrapper--third {
+        grid-column: 2 / 5;
+        grid-row: 4 / 5;
+    }
+
+    .contain-aboutme__text-wrapper--fourth {
+        grid-column: 6 / 9;
+        grid-row: 4 / 5;
+    }
+
+}
+
+
+
+
